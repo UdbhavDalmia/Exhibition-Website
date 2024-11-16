@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-    </style>
     <script src="script.js"></script>
     <title>Science Exhibition Website</title>
 </head>
 <body>
-    <nav>
-        <a href="">Home</a>
-        <a href="">Team</a>
-        <a href="">Our Idea</a>
-        <label for="dropdown">Projects</label>
+    <nav class="nav" id="desktop">
+        <a href="" class="nav-link">
+            <h3>Home</h3>
+        </a>
+        <a href="" class="nav-link">
+            <h3>Team</h3>
+        </a>
+        <a href="" class="nav-link">
+            <h3>Our Idea</h3>
+        </a>
+        <label for="dropdown">
+            <h3>Projects</h3>
+        </label>
         <select id="dropdown" onchange="navigateToLink()">
-            <option value="">-- Select an option --</option>
+            <option value=""></option>
             <option value="https://www.example.com/link1">Link 1</option>
             <option value="https://www.example.com/link2">Link 2</option>
             <option value="https://www.example.com/link3">Link 3</option>
@@ -31,8 +36,10 @@
             <option value="https://www.example.com/link11">Link 11</option>
         </select>
     </nav>
+    <div class="margin">
     <section id="intro">
         <h1>Introduction</h1>
     </section>
+    </div>
 </body>
 </html>
