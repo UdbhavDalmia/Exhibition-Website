@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Science Exhibition Website</title>
 </head>
 <body>
     <nav>
         <a href="">Home</a>
         <a href="">Team</a>
         <a href="">Our Idea</a>
+        <label for="dropdown">Projects</label>
+        <select id="dropdown" onchange="navigateToLink()">
+            <option value="">-- Select an option --</option>
+            <option value="https://www.example.com/link1">Link 1</option>
+            <option value="https://www.example.com/link2">Link 2</option>
+            <option value="https://www.example.com/link3">Link 3</option>
+            <option value="https://www.example.com/link4">Link 4</option>
+            <option value="https://www.example.com/link5">Link 5</option>
+            <option value="https://www.example.com/link6">Link 6</option>
+            <option value="https://www.example.com/link7">Link 7</option>
+            <option value="https://www.example.com/link8">Link 8</option>
+            <option value="https://www.example.com/link9">Link 9</option>
+            <option value="https://www.example.com/link10">Link 10</option>
+            <option value="https://www.example.com/link11">Link 11</option>
+        </select>
     </nav>
+    <section id="intro">
+        <h1>Introduction</h1>
+    </section>
 </body>
 </html>
