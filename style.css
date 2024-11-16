@@ -1,0 +1,26 @@
+:root {
+    --text: #030a07;
+    --background: #f5fcf9;
+    --primary: #41c28b;
+    --secondary: #94d5dc;
+    --accent: #68b7ce;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+}
+
+::selection {
+    background-color: var(--accent);
+}
+
+body {
+    background-color: var(--background);
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: var(--primary);
+}
