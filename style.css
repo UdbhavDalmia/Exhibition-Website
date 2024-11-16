@@ -1,94 +1,100 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:700|Inter:400");
 
 :root {
-    --text: #030a07;
-    --background: #f5fcf9;
-    --primary: #41c28b;
-    --secondary: #94d5dc;
-    --accent: #68b7ce;
+  --text: #030a07;
+  --background: #f5fcf9;
+  --primary: #41c28b;
+  --secondary: #94d5dc;
+  --accent: #68b7ce;
 }
 /* Universal Text Color */
 * {
-    color: var(--text);
+  color: var(--text);
 }
 
-  
 /* Highlighted Text Selection Style */
 ::selection {
-    background-color: var(--accent);
-    color: var(--secondary);
+  background-color: var(--accent);
 }
-  
+
 /* Body Styling */
 body {
-    font-family: "Inter";
-    font-weight: 400;
-    background-color: var(--background);
-    padding: 0;
-    padding-bottom: 400px; /* Extra space at the bottom */
-    margin: 0  /* Page margin */
+  font-family: "Inter";
+  font-weight: 400;
+  background-color: var(--background);
+  padding: 0;
+  padding-bottom: 400px; /* Extra space at the bottom */
+  margin: 0; /* Page margin */
 }
 
 .margin {
-    margin: 0 30px;
+  margin: 0 30px;
 }
-  
+
 /* Default Font Size */
 html {
-    font-size: 100%; /* 1rem = 16px */
+  font-size: 100%; /* 1rem = 16px */
 }
-  
+
 /* Header Styling */
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: "Inter";
-    font-weight: 700;
-}
-  
-h1 {
-    font-size: 4.2rem;
-    margin: 0px; /* Large main heading */
-}
-h2 {
-    font-size: 3.2rem;
-    margin: 0px;
-}
-h3 {
-    font-size: 2.4rem;
-    margin: 0px;
-}
-h4 {
-    font-size: 1.7rem;
-    margin: 0px;
-}
-h5 {
-    font-size: 1.3rem;
-    margin: 0px;
-}
-small {
-    font-size: 0.75rem; /* Smaller font size */
+  font-family: "Inter";
+  font-weight: 700;
 }
 
+h1 {
+  font-size: 4.2rem;
+  margin: 0px; /* Large main heading */
+}
+h2 {
+  font-size: 3.2rem;
+  margin: 0px;
+}
+h3 {
+  font-size: 2.4rem;
+  margin: 0px;
+}
+h4 {
+  font-size: 1.7rem;
+  margin: 0px;
+}
+h5 {
+  font-size: 1.3rem;
+  margin: 0px;
+}
+small {
+  font-size: 0.75rem; /* Smaller font size */
+}
 
 /* Desktop Navigation Bar */
 .nav {
-    background-color: var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
 }
-  
+
 /* Link Style */
 .nav-link {
-    display: block;
-    margin: 0 auto;
+  display: block;
 }
-  
+
 a {
-    text-decoration: none;
-}  
+  text-decoration: none;
+}
+
+#dropdown {
+  background-color: var(--primary);
+  border: none;
+  width: 20px;
+}
+
+.project-dropdown {
+  display: flex;
+}
