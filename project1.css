@@ -1,0 +1,135 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #222;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h5 {
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #41c28b;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #256d53;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #41c28b;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Layout Styling */
+section {
+  margin: 50px auto;
+  padding: 30px;
+  width: 80%;
+  background: #ffffff;
+  border-left: 8px solid #41c28b;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Dynamic hover effect */
+}
+
+/* Intro Section */
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#intro h1 {
+  flex: 1;
+  text-align: left;
+}
+
+#intro p {
+  max-width: 90%;
+  text-align: justify;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+ul li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #41c28b;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Dividers */
+.margin-line {
+  border-top: 4px solid #41c28b;
+  margin: 40px auto;
+  width: 85%;
+}
+
+/* Future Scope Section */
+#future-scope {
+  border-left: 10px solid #41c28b;
+}
+
+/* Buttons */
+button {
+  background-color: #41c28b;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #256d53;
+  transform: scale(1.05);
+}
+
+
