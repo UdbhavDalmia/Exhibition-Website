@@ -4,4 +4,5 @@ function navigateToLink() {
   if (selectedValue) {
     window.location.href = selectedValue; // Redirects to the selected link
   }
-}e
+}
+//this function is called when the dropdown is clicked
