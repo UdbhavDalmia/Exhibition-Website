@@ -4,5 +4,4 @@ function navigateToLink() {
   if (selectedValue) {
     window.location.href = selectedValue; // Redirects to the selected link
   }
-}
-//Great Code begins here
+}e
