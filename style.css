@@ -99,6 +99,15 @@ a {
   display: flex;
 }
 
+select {
+  padding: 4px;
+  font-size: 18px;
+  border-radius: 10%;
+}
+
+option:hover {
+  background-color: var(--secondary);
+}
 
 /* Team Section Grid */
 .student-cards {
