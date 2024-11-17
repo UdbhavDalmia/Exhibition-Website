@@ -23,7 +23,6 @@ body {
   font-weight: 400;
   background-color: var(--background);
   padding: 0;
-  padding-bottom: 400px; /* Extra space at the bottom */
   margin: 0; /* Page margin */
 }
 
