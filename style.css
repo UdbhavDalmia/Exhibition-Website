@@ -141,13 +141,14 @@ option:hover {
   justify-content: center;
 }
 
-.horizontal-card .card-body {
+.horizontal-card .horizontal-card-body {
   display: flex;
   max-width: 50em;
   border: 5px solid var(--primary);
   border-radius: 1em;
   letter-spacing: 1px;
   box-shadow: 0 4px var(--primary);
+  padding: 0 1em;
 }
 
 .horizontal-card img {
