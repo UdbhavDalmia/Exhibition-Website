@@ -167,3 +167,29 @@ footer {
 footer a {
   color: var(--background);
 }
+
+@media (max-width:1023px) {
+  .card {
+    max-width: 20em;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2.7em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.4em;
+  }
+
+  .horizontal-card .horizontal-card-body {
+    max-width: 35em;
+  }
+}
