@@ -88,6 +88,10 @@ a {
   text-decoration: none;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 #dropdown {
   background-color: var(--primary);
   border: none;
@@ -191,5 +195,27 @@ footer a {
 
   .horizontal-card .horizontal-card-body {
     max-width: 35em;
+  }
+}
+
+@media (max-width:768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .nav-link {
+    display: inline;
+  }
+
+  a img {
+    width: 40px;
+  }
+
+  label img {
+    width: 40px;
   }
 }

@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <nav class="nav" id="desktop">
-    <div class="desktop-nav">
+  <nav>
+    <div class="desktop-nav nav">
       <a href="index.html" class="nav-link">
         <h3>Home</h3>
       </a>
@@ -41,16 +41,16 @@
         <h3>Our Idea</h3>
       </a>
     </div>
-    <div class="mobile-nav">
+    <div class="mobile-nav nav">
       <a href="index.html" class="nav-link">
-        <h3>Home</h3>
+        <img src="/assets/home.svg" alt="">
       </a>
       <a href="#team" class="nav-link">
-        <h3>Team</h3>
+        <img src="/assets/team.svg" alt="">
       </a>
       <div class="project-dropdown">
         <label for="dropdown">
-          <h3>Projects</h3>
+          <img src="/assets/projects.svg" alt="">
         </label>
         <select id="dropdown" onchange="navigateToLink()">
           <option value=""></option>
@@ -68,7 +68,7 @@
         </select>
       </div>
       <a href="#theme" class="nav-link">
-        <h3>Our Idea</h3>
+        <img src="/assets/idea.svg" alt="">
       </a>
     </div>
   </nav>
