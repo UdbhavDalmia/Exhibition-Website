@@ -181,13 +181,13 @@ option:hover {
 
 footer {
   padding: 1% 0 0 1%;
-  height: 100px;
+  height: 80px;
   width: 99%;
   background-color: var(--primary);
 }
 
 footer a {
-  color: var(--background);
+  color: rgba(245, 252, 249, 0.9);
 }
 
 @media (max-width:1023px) {
@@ -251,5 +251,9 @@ footer a {
 
   h4 {
     font-size: 1.2em;
+  }
+
+  footer {
+    height: 60px;
   }
 }
