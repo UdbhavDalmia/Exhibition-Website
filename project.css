@@ -158,3 +158,12 @@ button:hover {
     gap: 30px;
   }
 }
+
+
+@media (max-width: 425px) {
+ #intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ } 
+}
