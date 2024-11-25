@@ -81,6 +81,10 @@ small {
   font-size: 0.75rem; /* Smaller font size */
 }
 
+p {
+  font-size: 20px;
+}
+
 /* Desktop Navigation Bar */
 .nav {
   background-color: var(--primary);
