@@ -2,15 +2,23 @@
 <html lang="en">
 
 <head>
+  <!-- Meta Information -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- External JavaScript -->
   <script src="script.js"></script>
+
   <title>Science Exhibition Website</title>
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav>
+    <!-- Desktop Navigation -->
     <div class="desktop-nav nav">
       <a href="index.html" class="nav-link">
         <h3>Home</h3>
@@ -25,6 +33,7 @@
         <select id="dropdown" onchange="navigateToLink()">
           <option value=""></option>
           <option value="project1.html">Wireless Energy Transfer</option>
+          <option value="project2.html">Clinometer</option>
           <option value="project2.html">Clinometer</option>
           <option value="project3.html">Eco Brick</option>
           <option value="project4.html">Hologram</option>
@@ -41,18 +50,13 @@
         <h3>Our Idea</h3>
       </a>
     </div>
-    <!--Mobile Nav Starts-->
+
+    <!-- Mobile Navigation -->
     <div class="mobile-nav nav">
-      <a href="index.html" class="nav-link">
-        <img src="/assets/home.png" alt="Home">
-      </a>
-      <a href="index.html#team" class="nav-link">
-        <img src="/assets/team.png" alt="Team">
-      </a>
+      <a href="index.html" class="nav-link"><img src="assets/home.png" alt="Home"></a>
+      <a href="index.html#team" class="nav-link"><img src="assets/team.png" alt="Team"></a>
       <div class="project-dropdown">
-        <label for="dropdown">
-          <img src="/assets/projects.png" alt="Projects">
-        </label>
+        <label for="dropdown-mobile"><img src="assets/projects.png" alt="Projects"></label>
         <select id="dropdown-mobile" onchange="navigateLink()">
           <option value=""></option>
           <option value="project1.html">Wireless Energy Transfer</option>
@@ -68,23 +72,29 @@
           <option value="project11.html">Buzzer Wire Game</option>
         </select>
       </div>
-      <a href="index.html#theme" class="nav-link">
-        <img src="/assets/idea.png" alt="Idea">
-      </a>
+      <a href="index.html#theme" class="nav-link"><img src="assets/idea.png" alt="Idea"></a>
     </div>
   </nav>
-  
+
+  <!-- Main Content -->
   <div class="margin">
+    <!-- Introduction Section -->
     <section id="intro">
       <h1>Introduction</h1>
       <p>Our initiative focuses on transforming waste into valuable resources through innovative, eco-friendly products. We aim to tackle environmental challenges by reducing waste and promoting sustainable practices. Our projects demonstrate how everyday waste can be creatively repurposed, encouraging communities to embrace waste management for a cleaner and greener future.</p>
     </section>
+
+    <!-- Theme Section -->
     <section id="theme">
       <h1>Theme</h1>
+      <p>We aim to inspire and educate about waste management by transforming waste into valuable items, reducing landfill waste, conserving resources, and promoting sustainability.<br><br> Our eco-friendly products, like upcycled bags, pen holders, and energy systems, showcase the potential of reusing materials and rethinking waste as a resource.</p>
     </section>
-    <secion id="team">
+
+    <!-- Team Section -->
+    <section id="team">
       <h1>Team</h1>
       <div class="main-team">
+        <!-- Guide Teacher -->
         <div class="guide-teacher-card">
           <div class="horizontal-card">
             <div class="horizontal-card-body">
@@ -97,7 +107,8 @@
             </div>
           </div>
         </div>
-        <br><br>
+
+        <!-- Student Cards -->
         <div class="student-cards">
           <div class="card" style="grid-area: card-1;">
             <div class="card-body">
@@ -121,12 +132,13 @@
           </div>
         </div>
       </div>
-    </secion>
-    <br>
+    </section>
   </div>
+
+  <!-- Footer -->
   <footer>
-    <h4>Contact <a href="https://wa.me/9560475013?text=Hello!%20I%20wanted%20to%20know%20about%20your%20science%20exhibition%20projects." target="_blank">Arpit</a> regarding the information of the project.</h4>
-    <h4>Website made by <a href="https://wa.me/8178109588?text=Hello!%20I%20wanted%20to%20know%20about%20your%20website." target="_blank">Udbhav</a> and <a href="https://wa.me/9718462276?text=Hello!%20I%20wanted%20to%20know%20about%20your%20website." target="_blank">Shashwat</a>.</h4>
+    <h4>Contact <a href="https://wa.me/9560475013" target="_blank">Arpit</a> for more information.</h4>
+    <h4>Website made by <a href="https://wa.me/8178109588" target="_blank">Udbhav</a> and <a href="https://wa.me/9718462276" target="_blank">Shashwat</a>.</h4>
   </footer>
 </body>
 

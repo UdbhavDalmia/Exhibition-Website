@@ -1,91 +1,100 @@
+/* Import Font */
 @import url("https://fonts.googleapis.com/css?family=Inter:700|Inter:400");
 
+/* Root Variables for Theme Colors */
 :root {
-  --text: #030a07;
-  --background: #f5fcf9;
-  --primary: #41c28b;
-  --secondary: #94d5dc;
-  --accent: #68b7ce;
+  --text: #030a07; /* Default text color */
+  --background: #f5fcf9; /* Background color */
+  --primary: #41c28b; /* Primary theme color */
+  --secondary: #94d5dc; /* Secondary color */
+  --accent: #68b7ce; /* Accent color */
 }
-/* Universal Text Color */
+
+/* Universal Styles */
 * {
   color: var(--text);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Highlighted Text Selection Style */
 ::selection {
   background-color: var(--accent);
+  color: var(--background);
 }
 
 /* Body Styling */
 body {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   background-color: var(--background);
-  padding: 0;
-  margin: 0; /* Page margin */
 }
 
+/* Margins for Main Content */
 .margin {
   margin: 0 30px;
 }
 
-/* Default Font Size */
-html {
-  font-size: 100%; /* 1rem = 16px */
-}
-
+/* Scrollbar Customization */
 ::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, var(--primary) 3%, var(--background) 10%, var(--background) 90%, var(--primary) 100%); /* Background of the track */
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 3%,
+    var(--background) 10%,
+    var(--background) 90%,
+    var(--primary) 100%
+  );
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary); /* Color of the scrollbar thumb */
+  background-color: var(--primary);
 }
 
-/* Header Styling */
+/* Typography Styles */
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 700;
+  margin: 8px 0;
 }
 
 h1 {
   font-size: 4.2rem;
-  margin: 0px; /* Large main heading */
 }
+
 h2 {
   font-size: 3.2rem;
-  margin: 0px;
 }
+
 h3 {
   font-size: 2.4rem;
-  margin: 0px;
 }
+
 h4 {
   font-size: 1.7rem;
-  margin: 0px;
 }
+
 h5 {
   font-size: 1.3rem;
-  margin: 0px;
-}
-small {
-  font-size: 0.75rem; /* Smaller font size */
 }
 
 p {
   font-size: 20px;
 }
 
-/* Desktop Navigation Bar */
+small {
+  font-size: 0.75rem;
+}
+
+/* Navigation Bar Styling */
 .nav {
   background-color: var(--primary);
   display: flex;
@@ -95,7 +104,7 @@ p {
   height: 100px;
 }
 
-/* Link Style */
+/* Navigation Links */
 .nav-link {
   display: block;
 }
@@ -104,44 +113,48 @@ a {
   text-decoration: none;
 }
 
+/* Mobile Navigation */
 .mobile-nav {
   display: none;
 }
 
-#dropdown {
-  background-color: var(--primary);
-  border: none;
-  width: 20px;
+.nav-link img,
+label img {
+  width: 40px;
+  height: 40px;
 }
 
+/* Dropdown Styling */
+#dropdown,
 #dropdown-mobile {
   background-color: var(--primary);
   border: none;
   width: 20px;
+  height: 40px;
 }
 
-.project-dropdown {
-  display: flex;
-}
-
-select {
+.project-dropdown select {
   padding: 4px;
   font-size: 18px;
   border-radius: 10%;
 }
 
-option:hover {
+.project-dropdown option:hover {
   background-color: var(--secondary);
 }
 
-/* Team Section Grid */
+select {
+  width: 20px;
+}
+
+/* Team Section Styling */
 .student-cards {
   display: grid;
   justify-content: space-around;
   row-gap: 80px;
   column-gap: 10px;
-  grid-template-areas:
-    "card-1 card-2";
+  grid-template-areas: "card-1 card-2";
+  margin: 40px 0;
 }
 
 .card {
@@ -159,7 +172,7 @@ option:hover {
 }
 
 .card-body {
-  padding: 0 1em 1em;
+  padding: 1em;
 }
 
 .horizontal-card {
@@ -167,60 +180,59 @@ option:hover {
   justify-content: center;
 }
 
-.horizontal-card .horizontal-card-body {
+.horizontal-card-body {
   display: flex;
   max-width: 50em;
   border: 5px solid var(--primary);
   border-radius: 1em;
-  letter-spacing: 1px;
   box-shadow: 0 4px var(--primary);
-  padding: 0 1em;
+  padding: 1em;
 }
 
-.horizontal-card img {
-  max-width: 100%;
-  border-radius: 0 0.9em 0.9em 0;
-  border-left: 2px solid var(--secondary);
-}
-
+/* Footer Styling */
 footer {
   padding: 1% 0 0 1%;
   height: 80px;
-  width: 99%;
+  width: 100%;
   background-color: var(--primary);
+  color: rgba(245, 252, 249, 0.9);
 }
 
 footer a {
   color: rgba(245, 252, 249, 0.9);
 }
 
-@media (max-width:1023px) {
+/* Responsive Design */
+
+/* Tablet View (Max Width: 1023px) */
+@media (max-width: 1023px) {
   .card {
     max-width: 20em;
   }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
 
   h2 {
-    font-size: 2.7em;
+    font-size: 2.7rem;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   h4 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
-  .horizontal-card .horizontal-card-body {
+  .horizontal-card-body {
     max-width: 35em;
   }
 }
 
-@media (max-width:768px) {
+/* Mobile View (Max Width: 768px) */
+@media (max-width: 768px) {
   .desktop-nav {
     display: none;
   }
@@ -229,34 +241,20 @@ footer a {
     display: flex;
   }
 
-  .nav-link {
-    display: inline;
-  }
-
-  a img {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-  }
-
-  label img {
-    width: 40px;
-  }
-
   h1 {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2.4em;
+    font-size: 2.4rem;
   }
 
   h3 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   h4 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   footer {
