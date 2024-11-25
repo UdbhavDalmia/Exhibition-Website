@@ -235,6 +235,10 @@ footer a {
 
   a img {
     width: 40px;
+    height: 40px;
+    background-color: var(--secondary);
+    border: 1px solid var(--accent);
+    display: inline-block;
   }
 
   label img {
