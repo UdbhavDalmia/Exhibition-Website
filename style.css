@@ -59,7 +59,6 @@ body {
 h1,
 h2,
 h3,
-h4,
 h5 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -87,7 +86,8 @@ h5 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 24px;
+  margin: 1px 0;
 }
 
 small {
@@ -124,6 +124,11 @@ label img {
   height: 40px;
 }
 
+span.size-40 {
+  font-size: 40px;
+  font-variation-settings: 'OPSZ' 40;
+}
+
 /* Dropdown Styling */
 #dropdown,
 #dropdown-mobile {
@@ -131,6 +136,11 @@ label img {
   border: none;
   width: 20px;
   height: 40px;
+}
+
+.project-dropdown {
+  display: flex;
+  align-items: center;
 }
 
 .project-dropdown select {
@@ -191,15 +201,20 @@ select {
 
 /* Footer Styling */
 footer {
-  padding: 1% 0 0 1%;
-  height: 80px;
+  padding: 1% 0 1% 1%;
+  height: 100px;
   width: 100%;
   background-color: var(--primary);
-  color: rgba(245, 252, 249, 0.9);
 }
 
 footer a {
-  color: rgba(245, 252, 249, 0.9);
+  color: #444140;
+}
+
+footer h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin: 0 0 8px 0;
 }
 
 /* Responsive Design */
@@ -229,6 +244,11 @@ footer a {
   .horizontal-card-body {
     max-width: 35em;
   }
+
+  p {
+    font-size: 20px;
+    margin: 0.7px;
+  }
 }
 
 /* Mobile View (Max Width: 768px) */
@@ -255,6 +275,11 @@ footer a {
 
   h4 {
     font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0.5px;
   }
 
   footer {
