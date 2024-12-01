@@ -159,6 +159,12 @@ button:hover {
 
   #intro {
     gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    height: 400px;
   }
 }
 
@@ -168,5 +174,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
   }
 }
